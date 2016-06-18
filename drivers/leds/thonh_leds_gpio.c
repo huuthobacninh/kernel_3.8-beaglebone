@@ -63,7 +63,6 @@ static int thonh_leds_gpio_probe(struct platform_device *pdev)
 	struct thonh_leds *temp, *my_leds;
 	struct device_node *child, *np = pdev->dev.of_node;
 
-	pr_err("%s:ThoNH----------- probe \n", __func__);
 	node_count = of_get_child_count(np);
 	my_leds = kmalloc(node_count*sizeof(struct thonh_leds), GFP_KERNEL);
 	temp = &my_leds[0];
