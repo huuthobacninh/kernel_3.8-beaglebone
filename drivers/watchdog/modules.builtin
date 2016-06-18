@@ -1,0 +1,2 @@
+kernel/drivers/watchdog/omap_wdt.ko
+kernel/drivers/watchdog/twl4030_wdt.ko

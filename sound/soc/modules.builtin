@@ -1,0 +1,5 @@
+kernel/sound/soc/snd-soc-core.ko
+kernel/sound/soc/codecs/snd-soc-tlv320aic3x.ko
+kernel/sound/soc/davinci/snd-soc-davinci.ko
+kernel/sound/soc/davinci/snd-soc-davinci-mcasp.ko
+kernel/sound/soc/davinci/snd-soc-evm.ko

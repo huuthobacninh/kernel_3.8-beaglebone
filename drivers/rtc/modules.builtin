@@ -1,0 +1,3 @@
+kernel/drivers/rtc/rtc-ds1307.ko
+kernel/drivers/rtc/rtc-omap.ko
+kernel/drivers/rtc/rtc-twl.ko

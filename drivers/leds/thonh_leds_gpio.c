@@ -30,6 +30,7 @@
 struct thonh_leds {
 	int gpios_id;
 	int value;
+	const char *label;
 	struct hrtimer hrtimer;
 	
 };
@@ -57,12 +58,12 @@ static enum hrtimer_restart hrtimer_callback( struct hrtimer *timer){
 
 static int thonh_leds_gpio_probe(struct platform_device *pdev)
 {
-//	pr_err("%s:ThoNH--------------- probe \n", __func__);
 	int node_count;
 	const char *state;
 	struct thonh_leds *temp, *my_leds;
 	struct device_node *child, *np = pdev->dev.of_node;
 
+	pr_err("%s:ThoNH----------- probe \n", __func__);
 	node_count = of_get_child_count(np);
 	my_leds = kmalloc(node_count*sizeof(struct thonh_leds), GFP_KERNEL);
 	temp = &my_leds[0];
@@ -73,6 +74,8 @@ static int thonh_leds_gpio_probe(struct platform_device *pdev)
 			temp->value = 1;
 		else
 			temp->value = 0;
+		temp->label = of_get_property(child, "label", NULL);
+		gpio_request(temp->gpios_id, temp->label);
 		gpio_direction_output(temp->gpios_id, temp->value);
 		temp++;
 		

@@ -7,12 +7,6 @@ menuconfig POWER_SUPPLY
 	  (if selected below).
 
 if POWER_SUPPLY
-######################## ThoNH
-config THONH_MODULE_TEST
-	tristate "thonh test build module kernel"
-	---help---
-		test build module
-#################################
 
 config POWER_SUPPLY_DEBUG
 	bool "Power supply debug"

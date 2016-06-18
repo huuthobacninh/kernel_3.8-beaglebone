@@ -11,25 +11,14 @@
 #include <linux/interrupt.h>
 #include <linux/irq.h>
 #include <linux/slab.h>
-#include <linux/kobject.h> 
-#include <linux/sysfs.h>
 
 
-struct kobject *button;
-int gpio_id;
 static struct of_device_id thonh_button_gpio_of_match[] = {
 	{ .compatible = "thonh_button_gpio", },
 	{ },
 };
+
 MODULE_DEVICE_TABLE(of, thonh_button_gpio_of_match);
-
-
-static ssize_t status_show(struct kobject *kobj, struct kobj_attribute *attr, char *buf)
-{
-	int status = gpio_get_value(gpio_id);
-	return sprintf(buf, "ThoNH--------status = %d \n", status);
-}
-static struct kobj_attribute button_attr = __ATTR(status, 0664, status_show, NULL); 
 
 
 static irqreturn_t button_gpio_irq(int irq, void *dev_id)
@@ -41,21 +30,14 @@ static irqreturn_t button_gpio_irq(int irq, void *dev_id)
 
 static int thonh_button_gpio_probe(struct platform_device *pdev)
 {
-
 	int test_irq, gpio_test, err;
-///////////////////			
+			
 	gpio_test = of_get_named_gpio(pdev->dev.of_node, "gpios", 0);
-	gpio_id = gpio_test;
+	gpio_request(gpio_test, "thonh-button");
 	gpio_direction_input(gpio_test);
 	gpio_set_debounce(gpio_test, 100);
 	test_irq = gpio_to_irq(gpio_test);
 	err = request_irq(test_irq, button_gpio_irq, IRQF_TRIGGER_FALLING, "thonh_isr", NULL);
-///////////////////
-	button = kobject_create_and_add("button1", kernel_kobj);
-	if(!button)
-		pr_err("%s:ThoNH--------------- error  \n", __func__);
-	sysfs_create_file(button, &button_attr.attr);
-	
 	
 	return 0;
 }

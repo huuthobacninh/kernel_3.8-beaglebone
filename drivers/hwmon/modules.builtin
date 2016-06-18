@@ -1,0 +1,3 @@
+kernel/drivers/hwmon/hwmon.ko
+kernel/drivers/hwmon/am335x-bandgap.ko
+kernel/drivers/hwmon/ina2xx.ko

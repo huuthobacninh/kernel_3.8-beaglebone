@@ -1,0 +1,7 @@
+kernel/drivers/misc/cape/beaglebone/bone-pinmux-helper.ko
+kernel/drivers/misc/cape/beaglebone/bone-iio-helper.ko
+kernel/drivers/misc/cape/beaglebone/capemgr.ko
+kernel/drivers/misc/cape/beaglebone/cape-bone-geiger.ko
+kernel/drivers/misc/cape/beaglebone/cape-bone-argus.ko
+kernel/drivers/misc/cape/beaglebone/cape-bone-nixie.ko
+kernel/drivers/misc/cape/beaglebone/logibone/logibone_r1_dma.ko

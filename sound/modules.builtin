@@ -1,0 +1,15 @@
+kernel/sound/soundcore.ko
+kernel/sound/core/snd.ko
+kernel/sound/core/snd-timer.ko
+kernel/sound/core/snd-hrtimer.ko
+kernel/sound/core/snd-pcm.ko
+kernel/sound/core/snd-page-alloc.ko
+kernel/sound/core/snd-rawmidi.ko
+kernel/sound/core/snd-compress.ko
+kernel/sound/core/oss/snd-mixer-oss.ko
+kernel/sound/core/oss/snd-pcm-oss.ko
+kernel/sound/soc/snd-soc-core.ko
+kernel/sound/soc/codecs/snd-soc-tlv320aic3x.ko
+kernel/sound/soc/davinci/snd-soc-davinci.ko
+kernel/sound/soc/davinci/snd-soc-davinci-mcasp.ko
+kernel/sound/soc/davinci/snd-soc-evm.ko

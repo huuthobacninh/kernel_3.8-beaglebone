@@ -1,0 +1,12 @@
+kernel/drivers/usb/usb-common.ko
+kernel/drivers/usb/class/cdc-acm.ko
+kernel/drivers/usb/core/usbcore.ko
+kernel/drivers/usb/gadget/udc-core.ko
+kernel/drivers/usb/mon/usbmon.ko
+kernel/drivers/usb/musb/musb_hdrc.ko
+kernel/drivers/usb/musb/musb_dsps.ko
+kernel/drivers/usb/otg/twl6030-usb.ko
+kernel/drivers/usb/otg/nop-usb-xceiv.ko
+kernel/drivers/usb/phy/omap-usb2.ko
+kernel/drivers/usb/phy/omap-control-usb.ko
+kernel/drivers/usb/storage/usb-storage.ko

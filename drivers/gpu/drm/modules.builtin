@@ -1,0 +1,4 @@
+kernel/drivers/gpu/drm/drm_kms_helper.ko
+kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/drm/i2c/tda998x.ko
+kernel/drivers/gpu/drm/tilcdc/tilcdc.ko

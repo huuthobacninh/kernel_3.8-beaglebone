@@ -1,0 +1,3 @@
+kernel/drivers/bus/omap-ocp2scp.ko
+kernel/drivers/bus/omap_l3_smx.ko
+kernel/drivers/bus/omap_l3_noc.ko

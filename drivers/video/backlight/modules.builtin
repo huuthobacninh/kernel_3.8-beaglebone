@@ -1,0 +1,6 @@
+kernel/drivers/video/backlight/lcd.ko
+kernel/drivers/video/backlight/ili9320.ko
+kernel/drivers/video/backlight/platform_lcd.ko
+kernel/drivers/video/backlight/backlight.ko
+kernel/drivers/video/backlight/pwm_bl.ko
+kernel/drivers/video/backlight/tps65217_bl.ko

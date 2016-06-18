@@ -1,0 +1,4 @@
+kernel/drivers/w1/wire.ko
+kernel/drivers/w1/masters/w1-gpio.ko
+kernel/drivers/w1/slaves/w1_therm.ko
+kernel/drivers/w1/slaves/w1_smem.ko

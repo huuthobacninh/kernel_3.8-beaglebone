@@ -1,0 +1,3 @@
+kernel/drivers/rstctl/rstctl-test.ko
+kernel/drivers/rstctl/rstctl-test-consumer.ko
+kernel/drivers/rstctl/rstctl-gpio.ko

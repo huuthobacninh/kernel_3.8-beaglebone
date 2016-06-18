@@ -55,7 +55,7 @@
 	};
 
 	ocp: ocp {
-
+	
 /*************** ThoNH node ******************/
 		thonh-leds {
 			compatible = "thonh_leds_gpio";
@@ -63,25 +63,30 @@
 			led0 {
 				gpios = <&gpio2 21 0>;
 				default-state = "off";
+				label="led0";
 			};
 			led1 {
 				gpios = <&gpio2 22 0>;
-				default-state = "on";			
+				default-state = "on";
+				label="led1";			
 			};
 			led2 {
 				gpios = <&gpio2 23 0>;
-				default-state = "off";			
+				default-state = "off";
+				label="led2";			
 			};
 			led3 {
 				gpios = <&gpio2 24 0>;
-				default-state = "off";			
+				default-state = "off";
+				label="led3";			
 			};
 			
 		};
 
 		thonh-button {
 			compatible = "thonh_button_gpio";
-			gpios = <&gpio2 12 0>;
+			gpios = <&gpio1 30 0>;
+			
 			
 		};
 
