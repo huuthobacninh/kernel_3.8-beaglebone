@@ -1,8 +1,0 @@
-kernel/drivers/net/ethernet/micrel/ks8851.ko
-kernel/drivers/net/ethernet/micrel/ks8851_mll.ko
-kernel/drivers/net/ethernet/smsc/smc91x.ko
-kernel/drivers/net/ethernet/smsc/smsc911x.ko
-kernel/drivers/net/ethernet/ti/davinci_emac.ko
-kernel/drivers/net/ethernet/ti/davinci_mdio.ko
-kernel/drivers/net/ethernet/ti/davinci_cpdma.ko
-kernel/drivers/net/ethernet/ti/ti_cpsw.ko

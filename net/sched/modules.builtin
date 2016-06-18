@@ -1,3 +1,0 @@
-kernel/net/sched/sch_htb.ko
-kernel/net/sched/sch_codel.ko
-kernel/net/sched/sch_fq_codel.ko

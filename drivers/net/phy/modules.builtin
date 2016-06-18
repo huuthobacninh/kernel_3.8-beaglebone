@@ -1,3 +1,0 @@
-kernel/drivers/net/phy/libphy.ko
-kernel/drivers/net/phy/smsc.ko
-kernel/drivers/net/phy/at803x.ko

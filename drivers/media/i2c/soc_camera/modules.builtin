@@ -1,6 +1,0 @@
-kernel/drivers/media/i2c/soc_camera/mt9m001.ko
-kernel/drivers/media/i2c/soc_camera/mt9m111.ko
-kernel/drivers/media/i2c/soc_camera/mt9m114.ko
-kernel/drivers/media/i2c/soc_camera/mt9t031.ko
-kernel/drivers/media/i2c/soc_camera/mt9t112.ko
-kernel/drivers/media/i2c/soc_camera/mt9v022.ko
